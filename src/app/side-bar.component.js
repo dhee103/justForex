@@ -33,7 +33,7 @@ SideBarComponent = __decorate([
                 core_1.transition('in => out', core_1.animate('400ms ease-in-out')),
                 core_1.transition('out => in', core_1.animate('400ms ease-in-out'))
             ]),
-            core_1.trigger('navMove', [
+            core_1.trigger('bodyMove', [
                 core_1.state('in', core_1.style({
                     transform: 'translate3d(370%, 0, 0)'
                 })),

@@ -18,7 +18,7 @@ import {Component, trigger, state, style, transition, animate, keyframes} from '
       transition('out => in', animate('400ms ease-in-out'))
     ]),
 
-    trigger('navMove', [
+    trigger('bodyMove', [
       state('in', style({
         transform: 'translate3d(370%, 0, 0)'
       })),

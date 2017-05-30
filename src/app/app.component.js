@@ -14,7 +14,10 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <top-header></top-header>\n  <side-bar></side-bar>\n\n  <router-outlet></router-outlet>\n  "
+        template: "\n  <div class=\"background\">\n    <top-header></top-header>\n    <side-bar></side-bar>\n\n    <div class=\"template\">\n      <router-outlet ></router-outlet>\n    </div>\n  </div>\n  ",
+        styleUrls: [
+            './css/app.component.css'
+        ],
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

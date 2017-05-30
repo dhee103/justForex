@@ -11,6 +11,7 @@
 
 #sidebar-wrapper {
   margin-left: 0px;
+  margin-top: 10px;
   left: 0px;
   width: 20%;
   height: 100%;
@@ -27,6 +28,7 @@ button {
 
 button span {
   margin-left: -14px;
+  color: #00cc00;
 }
 
 #sidebar-wrapper {
@@ -63,14 +65,14 @@ div.input-mask {
  * Sidebar
  */
 #sidebar-wrapper {
-  background: #30426a;
+  background: white;
 }
 ul.sidebar .sidebar-main a,
 .sidebar-footer,
 ul.sidebar .sidebar-list a:hover,
 #page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
   /* Sidebar header and footer color */
-  background: #2d3e63;
+  background: lightgray;
 }
 ul.sidebar {
   position: absolute;
@@ -107,7 +109,7 @@ ul.sidebar .sidebar-main .menu-icon {
   line-height: 60px;
 }
 ul.sidebar .sidebar-title {
-  color: #738bc0;
+  color: #00cc00;
   font-size: 12px;
   height: 35px;
   line-height: 40px;
@@ -120,12 +122,12 @@ ul.sidebar .sidebar-list {
 ul.sidebar .sidebar-list a {
   text-indent: 25px;
   font-size: 15px;
-  color: #b2bfdc;
+  color: #a6a6a6;
   line-height: 40px;
 }
 ul.sidebar .sidebar-list a:hover {
   color: #fff;
-  border-left: 3px solid #e99d1a;
+  border-left: 3px solid #00cc00;
   text-indent: 22px;
 }
 ul.sidebar .sidebar-list a:hover .menu-icon {
