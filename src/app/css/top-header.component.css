@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.topnav {
+  margin-top: 30px;
+  height: 60px;
+  weight: auto;
+  box-shadow: 0 10px 6px -6px #d3d3d3;
+  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top: 0; // required as well.
+}
+
+.topnav a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: black;
+  font-weight: 400;
+	line-height: 30px;
+  background: #f8e71c;
+}
+
+.topnav #options {
+  float: right;
+}
+
+.topnav i {
+  margin-right: 50px
+}
