@@ -1,8 +1,12 @@
-import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { AceEditorModule } from 'ng2-ace-editor';
 
-import { AppComponent }  from './app.component';
+import { AppComponent } from './app.component';
 import { TopHeaderComponent } from './top-header.component'
 import { SideBarComponent } from './side-bar.component'
 import { DashboardComponent }  from './dashboard.component';
@@ -54,23 +58,28 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports:      [
+  declarations: [
+    AppComponent,
+    TopHeaderComponent,
+    SideBarComponent,
+    DashboardComponent,
+    ProjectsComponent,
+    MyProfileComponent,
+    LeaderboardsComponent,
+    TutorialsComponent,
+    CommunityComponent,
+    APIComponent,
+    EditorComponent
+  ],
+  imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    AceEditorModule,
     RouterModule.forRoot(appRoutes)
   ],
-  declarations: [
-      AppComponent,
-      TopHeaderComponent,
-      SideBarComponent,
-      DashboardComponent,
-      ProjectsComponent,
-      MyProfileComponent,
-      LeaderboardsComponent,
-      TutorialsComponent,
-      CommunityComponent,
-      APIComponent,
-      EditorComponent
-    ],
-  bootstrap:    [ AppComponent ]
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

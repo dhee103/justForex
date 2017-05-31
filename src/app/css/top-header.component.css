@@ -2,12 +2,12 @@
 
 .topnav {
   margin-top: 40px;
-  height: 70px;
+  height: 10vh;
   weight: auto;
   box-shadow: 0 10px 6px -6px #d3d3d3;
   position: -webkit-sticky;  // required for Safari
   position: sticky;
-  top: 0; // required as well.
+  top: 0;
 }
 
 .topnav a {
