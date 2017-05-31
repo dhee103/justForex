@@ -1,6 +1,6 @@
 //add "AceEditorComponent" to your modules list
-import { AceEditorComponent } from 'ng2-ace-editor';
 import {Component, ViewChild} from '@angular/core';
+import { AceEditorComponent} from 'ng2-ace-editor';
 
 //to use theme eclipse
 //with angular-cli add "../node_modules/ace-builds/src-min/ace.js"
@@ -10,8 +10,9 @@ import {Component, ViewChild} from '@angular/core';
     template: `
       <ace-editor
        [(text)]="text"
-        #editor style="height:150px;"></ace-editor>
-  `
+        #editor></ace-editor>
+  `,
+    styleUrls: ['./css/editor.component.css']
 })
 
 export class EditorComponent {

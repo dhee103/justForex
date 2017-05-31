@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #sidebar-wrapper {
+  float: left;
   margin-left: 0px;
-  margin-top: 10px;
+  margin-top: 1%;
   font-family: 'Montserrat', sans-serif;
   left: 0px;
-  width: 20%;
+  width: 20vw;
   height: 75vh;
   z-index: 999;
 }
@@ -102,34 +103,37 @@ ul.sidebar .sidebar-main .menu-icon {
 }
 ul.sidebar .sidebar-title {
   color: #00cc00;
-  font-size: 12px;
+  font-size: 1em;
   height: 35px;
+  margin-top: 5%;
   line-height: 40px;
   text-transform: uppercase;
   transition: all .6s ease 0s;
 }
 ul.sidebar .sidebar-list {
-  height: 40px;
+  height: 10%;
 }
 ul.sidebar .sidebar-list a {
   text-indent: 25px;
-  font-size: 15px;
+  font-size: 1.1em;
   color: #a6a6a6;
   line-height: 40px;
+  width: 19vw;
 }
+
 ul.sidebar .sidebar-list a:hover {
   color: #fff;
   border-left: 3px solid #00cc00;
   text-indent: 22px;
 }
 ul.sidebar .sidebar-list a:hover .menu-icon {
-  text-indent: 25px;
+  text-indent: 1em;
 }
 ul.sidebar .sidebar-list .menu-icon {
   float: right;
   padding-right: 29px;
   line-height: 40px;
-  width: 70px;
+  width: 20%;
 }
 #page-wrapper:not(.open) ul.sidebar {
   bottom: 0;
