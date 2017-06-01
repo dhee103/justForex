@@ -1,13 +1,14 @@
 .ace {
   width:50vw;
-  margin-top: -1.7%;
+  height: 40vh;
+  margin-top: 5.4%;
   overflow: auto;
-  z-index: -1;
+  position: fixed;
+  z-index: -2;
 }
 
 .code-editor {
-  margin-top:-47%;
-  z-index: -1;
+  margin-top:-33%;
   height: 100vh;
 }
 
@@ -16,6 +17,7 @@ nav {
   border: none;
   background-color: white;
   border: 0.3px solid #e6e6e6;
+  z-index: -1;
 }
 
 .navbar-center {
@@ -31,7 +33,7 @@ nav {
 }
 
 .navbar-fixed-top {
-  margin-top: 10%;
+  margin-top: 8.3%;
 }
 
 .navbar-center button {

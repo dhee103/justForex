@@ -9,14 +9,17 @@ import { AceEditorDirective } from 'ng2-ace-editor';
 
 @Component({
     templateUrl: './views/editor.component.html',
-    styleUrls: ['./css/editor.component.css']
+    styleUrls: [
+      './css/editor.component.css',
+      '../../node_modules/font-awesome/css/font-awesome.min.css']
 })
 
 export class EditorComponent {
-  options:any = {minLines: 10, maxLines:1000, printMargin: false};
+  options:any = {minLines: 31, maxLines:1000, printMargin: false};
   tasks: string[];
   title: string;
   text: string = "";
+  lang: string = "JavaScript";
 
     constructor(private editorService:EditorService){
         this.editorService.getTasks()
@@ -36,6 +39,10 @@ export class EditorComponent {
                 this.tasks.push(t.text);
                 this.title = '';
             });
+    }
+
+    changeLanguage(lang:string) {
+
     }
 
     updateStatus(task){
