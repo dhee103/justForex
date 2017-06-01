@@ -18,6 +18,7 @@ import { TutorialsComponent } from './tutorials.component'
 import { APIComponent } from './api.component'
 import { EditorComponent } from './editor.component'
 import { MyprojectComponent } from './myproject/myproject.component'
+import { GraphsComponent } from './graphs/graphs.component'
 
 import { EditorService } from './services/editor.service';
 import { ProjectsService } from './services/projects.service';
@@ -52,6 +53,10 @@ const appRoutes: Routes = [
     component: EditorComponent
   },
   {
+    path: 'graphs',
+    component: GraphsComponent
+  },
+  {
     path: '**',
     redirectTo: '/'
   }
@@ -70,7 +75,8 @@ const appRoutes: Routes = [
     CommunityComponent,
     APIComponent,
     EditorComponent,
-    MyprojectComponent
+    MyprojectComponent,
+    GraphsComponent
   ],
   imports: [
     BrowserModule,
