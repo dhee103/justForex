@@ -1,7 +1,7 @@
 //add "AceEditorComponent" to your modules list
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { EditorService } from './services/editor.service';
-import { AceEditorDirective } from 'ng2-ace-editor';
+import { AceEditorComponent } from 'ng2-ace-editor';
 
 //to use theme eclipse
 //with angular-cli add "../node_modules/ace-builds/src-min/ace.js"
@@ -9,14 +9,18 @@ import { AceEditorDirective } from 'ng2-ace-editor';
 
 @Component({
     templateUrl: './views/editor.component.html',
-    styleUrls: ['./css/editor.component.css']
+    styleUrls: [
+      './css/editor.component.css',
+      '../../node_modules/font-awesome/css/font-awesome.min.css']
 })
 
 export class EditorComponent {
-  options:any = {minLines: 10, maxLines:1000, printMargin: false};
+   @ViewChild('editor') editor;
+  options:any = {minLines: 31, maxLines:1000, printMargin: false};
   tasks: string[];
   title: string;
   text: string = "";
+  lang: string = "javascript"
 
     constructor(private editorService:EditorService){
         this.editorService.getTasks()
@@ -48,5 +52,27 @@ export class EditorComponent {
         this.editorService.updateStatus(_task).subscribe(data => {
             task.isDone = !task.isDone;
         });
+    }
+
+    ngAfterViewInit() {
+        this.editor.setMode(this.lang);
+
+        this.editor.getEditor().setOptions({
+            enableBasicAutocompletion: true
+        });
+
+        this.editor.getEditor().commands.addCommand({
+            name: "showOtherCompletions",
+            bindKey: "Ctrl-.",
+            exec: function (editor) {
+
+            }
+        })
+    }
+
+    changeLanguage(lang:string) {
+      this.lang = lang;
+      //lower case translation of lang
+      this.editor.setMode(lang);
     }
 }

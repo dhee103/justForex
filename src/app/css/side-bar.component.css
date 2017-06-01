@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #sidebar-wrapper {
+  position: fixed;
   float: left;
   margin-left: 0px;
   margin-top: 1%;
