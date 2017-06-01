@@ -17,7 +17,8 @@ import { LeaderboardsComponent } from './leaderboards.component'
 import { TutorialsComponent } from './tutorials.component'
 import { APIComponent } from './api.component'
 import { EditorComponent } from './editor.component'
-import { EditorService } from './services/editor.service'
+import { EditorService } from './services/editor.service';
+import { MyprojectComponent } from './myproject/myproject.component'
 
 const appRoutes: Routes = [
   {
@@ -66,7 +67,8 @@ const appRoutes: Routes = [
     TutorialsComponent,
     CommunityComponent,
     APIComponent,
-    EditorComponent
+    EditorComponent,
+    MyprojectComponent
   ],
   imports: [
     BrowserModule,
