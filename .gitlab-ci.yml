@@ -14,5 +14,5 @@ script:
   - ng build
   - ng test
 
-after_success:
+
   
