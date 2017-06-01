@@ -1,6 +1,6 @@
 //add "AceEditorComponent" to your modules list
 import { Component, ViewChild } from '@angular/core';
-import { EditorService } from './services/editor.service';
+import { EditorService } from './editor.service';
 import { AceEditorComponent } from 'ng2-ace-editor';
 
 //to use theme eclipse
@@ -8,10 +8,10 @@ import { AceEditorComponent } from 'ng2-ace-editor';
 //and "../node_modules/ace-builds/src-min/theme-eclipse.js" to "scripts" var into the file angular-cli.json
 
 @Component({
-    templateUrl: './views/editor.component.html',
+    templateUrl: './editor.component.html',
     styleUrls: [
-      './css/editor.component.css',
-      '../../node_modules/font-awesome/css/font-awesome.min.css']
+      './editor.component.css',
+      '../../../node_modules/font-awesome/css/font-awesome.min.css']
 })
 
 export class EditorComponent {

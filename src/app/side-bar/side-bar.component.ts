@@ -3,10 +3,10 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 
 @Component({
   selector: 'side-bar',
-  templateUrl: './views/side-bar.component.html',
+  templateUrl: './side-bar.component.html',
   styleUrls: [
-    './css/side-bar.component.css',
-    '../../node_modules/font-awesome/css/font-awesome.min.css'
+    './side-bar.component.css',
+    '../../../node_modules/font-awesome/css/font-awesome.min.css'
   ],
   animations: [
     trigger('slideInOut', [

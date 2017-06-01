@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ProjectsService } from './services/projects.service';
-import { MyprojectComponent } from './myproject/myproject.component';
-import { Project } from './myproject/project';
+import { ProjectsService } from './projects.service';
+import { MyprojectComponent } from '../myproject/myproject.component';
+import { Project } from '../myproject/project';
 
 @Component({
-  templateUrl: './projects/projects.component.html',
-  styleUrls: ['./projects/projects.component.css']
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
 })
 
 export class ProjectsComponent {

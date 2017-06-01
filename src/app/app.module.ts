@@ -7,21 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AceEditorModule } from 'ng2-ace-editor';
 
 import { AppComponent } from './app.component';
-import { TopHeaderComponent } from './top-header.component'
-import { SideBarComponent } from './side-bar.component'
-import { DashboardComponent }  from './dashboard.component';
-import { ProjectsComponent } from './projects.component'
-import { MyProfileComponent } from './myprofile.component'
-import { CommunityComponent } from './community.component'
-import { LeaderboardsComponent } from './leaderboards.component'
-import { TutorialsComponent } from './tutorials.component'
-import { APIComponent } from './api.component'
-import { EditorComponent } from './editor.component'
+import { TopHeaderComponent } from './top-header/top-header.component'
+import { SideBarComponent } from './side-bar/side-bar.component'
+import { DashboardComponent }  from './dashboard/dashboard.component';
+import { ProjectsComponent } from './projects/projects.component'
+import { MyProfileComponent } from './myprofile/myprofile.component'
+import { CommunityComponent } from './community/community.component'
+import { LeaderboardsComponent } from './leaderboards/leaderboards.component'
+import { TutorialsComponent } from './tutorials/tutorials.component'
+import { EditorComponent } from './editor/editor.component'
 import { MyprojectComponent } from './myproject/myproject.component'
 import { GraphsComponent } from './graphs/graphs.component'
 
-import { EditorService } from './services/editor.service';
-import { ProjectsService } from './services/projects.service';
+import { EditorService } from './editor/editor.service';
+import { ProjectsService } from './projects/projects.service';
 
 const appRoutes: Routes = [
   {
@@ -73,7 +72,6 @@ const appRoutes: Routes = [
     LeaderboardsComponent,
     TutorialsComponent,
     CommunityComponent,
-    APIComponent,
     EditorComponent,
     MyprojectComponent,
     GraphsComponent
