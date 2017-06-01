@@ -8,7 +8,7 @@ body {
   height: 100%;
 }
 
-p {
+#loading {
   color: #00cc00;
   font-family: 'Source Code Pro', monospace;
   font-size: 40px;
