@@ -1,0 +1,2 @@
+# justForex
+Forex Algorithm Trading
