@@ -17,7 +17,8 @@ import { LeaderboardsComponent } from './leaderboards.component'
 import { TutorialsComponent } from './tutorials.component'
 import { APIComponent } from './api.component'
 import { EditorComponent } from './editor.component'
-import { EditorService } from './services/editor.service'
+import { EditorService } from './services/editor.service';
+import { GraphsComponent } from './graphs/graphs.component'
 
 const appRoutes: Routes = [
   {
@@ -49,6 +50,10 @@ const appRoutes: Routes = [
     component: EditorComponent
   },
   {
+    path: 'graphs',
+    component: GraphsComponent
+  },
+  {
     path: '**',
     redirectTo: '/'
   }
@@ -66,7 +71,8 @@ const appRoutes: Routes = [
     TutorialsComponent,
     CommunityComponent,
     APIComponent,
-    EditorComponent
+    EditorComponent,
+    GraphsComponent
   ],
   imports: [
     BrowserModule,
