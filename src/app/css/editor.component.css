@@ -1,5 +1,40 @@
-div {
-  min-height: 200px;
-  width:100%;
+.ace {
+  width:50vw;
+  margin-top: -1.7%;
   overflow: auto;
+  z-index: -1;
+}
+
+.code-editor {
+  margin-top:-47%;
+  z-index: -1;
+  height: 100vh;
+}
+
+nav {
+  width: 100vw;
+  border: none;
+  background-color: white;
+  border: 0.3px solid #e6e6e6;
+}
+
+.navbar-center {
+  position: absolute;
+   width: 100%;
+   left: 0;
+   text-align: center;
+   margin-top: 1%;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-fixed-top {
+  margin-top: 10%;
+}
+
+.navbar-center button {
+  margin-left: 3%;
+  width:12%;
 }

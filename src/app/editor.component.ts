@@ -13,6 +13,7 @@ import { AceEditorDirective } from 'ng2-ace-editor';
 })
 
 export class EditorComponent {
+  options:any = {minLines: 10, maxLines:1000, printMargin: false};
   tasks: string[];
   title: string;
   text: string = "";
