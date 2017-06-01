@@ -1,1 +1,12 @@
-<h1>hi</h1>
+<div ace-editor
+ [(text)]="text"
+ [theme]="'github'"
+ [mode]="'javascript'"
+ [readOnly]="false"
+ [autoUpdateContent]="true"
+ [durationBeforeCallback]="1000"
+ (textChanged)="onChange($event)"></div>
+
+  <button class="btn btn-default" (click)="addTask($event)">
+    Save
+  </button>

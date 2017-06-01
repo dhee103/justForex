@@ -1,37 +1,51 @@
 //add "AceEditorComponent" to your modules list
-import {Component, ViewChild} from '@angular/core';
-import { AceEditorComponent} from 'ng2-ace-editor';
+import { Component } from '@angular/core';
+import { EditorService } from './services/editor.service';
+import { AceEditorDirective } from 'ng2-ace-editor';
 
 //to use theme eclipse
 //with angular-cli add "../node_modules/ace-builds/src-min/ace.js"
 //and "../node_modules/ace-builds/src-min/theme-eclipse.js" to "scripts" var into the file angular-cli.json
 
 @Component({
-    template: `
-      <ace-editor
-       [(text)]="text"
-        #editor></ace-editor>
-  `,
+    templateUrl: './views/editor.component.html',
     styleUrls: ['./css/editor.component.css']
 })
 
 export class EditorComponent {
-    @ViewChild('editor') editor;
-    text: string = "";
+  tasks: string[];
+  title: string;
+  text: string = "";
 
-    ngAfterViewInit() {
-        this.editor.setTheme("eclipse");
+    constructor(private editorService:EditorService){
+        this.editorService.getTasks()
+            .subscribe(tasks => {
+                this.tasks = tasks;
+            });
+    }
 
-        this.editor.getEditor().setOptions({
-            enableBasicAutocompletion: true
+    addTask(event){
+        event.preventDefault();
+        var t = {
+          text: this.text
+        }
+
+        this.editorService.addTask(t)
+            .subscribe(task => {
+                this.tasks.push(t.text);
+                this.title = '';
+            });
+    }
+
+    updateStatus(task){
+        var _task = {
+            _id:task._id,
+            title: task.title,
+            isDone: !task.isDone
+        };
+
+        this.editorService.updateStatus(_task).subscribe(data => {
+            task.isDone = !task.isDone;
         });
-
-        this.editor.getEditor().commands.addCommand({
-            name: "showOtherCompletions",
-            bindKey: "Ctrl-.",
-            exec: function (editor) {
-
-            }
-        })
     }
 }

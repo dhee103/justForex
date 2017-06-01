@@ -17,6 +17,7 @@ import { LeaderboardsComponent } from './leaderboards.component'
 import { TutorialsComponent } from './tutorials.component'
 import { APIComponent } from './api.component'
 import { EditorComponent } from './editor.component'
+import { EditorService } from './services/editor.service'
 
 const appRoutes: Routes = [
   {
@@ -42,10 +43,6 @@ const appRoutes: Routes = [
   {
     path: 'tutorials',
     component: TutorialsComponent
-  },
-  {
-    path: 'api',
-    component: APIComponent
   },
   {
     path: 'editor',
@@ -79,7 +76,7 @@ const appRoutes: Routes = [
     AceEditorModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [EditorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
