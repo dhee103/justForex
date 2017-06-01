@@ -10,15 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://code.highcharts.com/stock/highstock.js"></script>
   <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-
-  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
-  <!-- <script src="https://code.highcharts.com/stock/highstock.js"></script> -->
   <script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
-  <!-- <script src="https://code.highcharts.com/stock/modules/exporting.js"></script> -->
-
-  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
-  <!-- <script src="https://code.highcharts.com/stock/highstock.js"></script> -->
-  <!-- <script src="https://code.highcharts.com/stock/modules/exporting.js"></script> -->
 </head>
 
 <body>
@@ -46,27 +38,6 @@
   </div>
 
   <script type="text/javascript">
-  //  $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data) {
-  //  // Create the chart
-  //    Highcharts.stockChart('bot', {
-   //
-  //        rangeSelector: {
-  //            selected: 1
-  //        },
-   //
-  //        title: {
-  //            text: 'Balance Over Time'
-  //        },
-   //
-  //        series: [{
-  //            name: 'BOT',
-  //            data: data,
-  //            tooltip: {
-  //                valueDecimals: 2
-  //            }
-  //        }]
-  //    });
-  //   });
     var seriesOptions = [],
       seriesCounter = 0,
       names = ['MSFT', 'AAPL', 'GOOG'];
@@ -173,7 +144,6 @@
  <script type="text/javascript">
   $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-v.json&callback=?', function (data) {
   // $.getJSON('https://www.doc.ic.ac.uk/~dsg115/test.php?callback=?', function (data) {
-    //  $.getJSON('test.json', function (data) {
 
     // create the chart
     Highcharts.stockChart('vol', {
