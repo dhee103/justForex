@@ -32,12 +32,15 @@ export class EditorComponent {
     addTask(event){
         event.preventDefault();
         var t = {
+          language: "python",
+          name: "my project 1",
+          last_edited: "01/01/17",
           text: this.text
         }
 
         this.editorService.addTask(t)
             .subscribe(task => {
-                this.tasks.push(t.text);
+                this.tasks.push(task);
                 this.title = '';
             });
     }

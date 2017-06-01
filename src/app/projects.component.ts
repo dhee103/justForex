@@ -9,8 +9,8 @@ import { Project } from './myproject/project';
 })
 
 export class ProjectsComponent {
-  projects: Project[] = [
-    {
+  projects: Project[] = [];
+  /*  {
       language: "python",
       name: "my first project",
       last_edited: "10/10/10"
@@ -20,7 +20,7 @@ export class ProjectsComponent {
       name: "my second project",
       last_edited: "01/06/17"
     }
-  ];
+  ];*/
 
 
    constructor(private projectsService: ProjectsService) {

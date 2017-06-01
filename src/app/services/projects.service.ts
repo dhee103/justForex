@@ -12,7 +12,7 @@ export class ProjectsService {
   }
 
   getProjects() {
-    return this.http.get('/api/projects')
+    return this.http.get('/api/tasks')
         .map(res => res.json());
   }
 
