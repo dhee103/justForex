@@ -1,0 +1,42 @@
+.ace {
+  width:50vw;
+  height: 40vh;
+  margin-top: 5.4%;
+  overflow: auto;
+  position: fixed;
+  z-index: -2;
+}
+
+.code-editor {
+  margin-top:-33%;
+  height: 100vh;
+}
+
+nav {
+  width: 100vw;
+  border: none;
+  background-color: white;
+  border: 0.3px solid #e6e6e6;
+  z-index: -1;
+}
+
+.navbar-center {
+  position: absolute;
+   width: 100%;
+   left: 0;
+   text-align: center;
+   margin-top: 1%;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-fixed-top {
+  margin-top: 8.3%;
+}
+
+.navbar-center button {
+  margin-left: 3%;
+  width:12%;
+}

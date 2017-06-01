@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.topnav {
+  height: 15vh;
+  width: 100vw;
+  box-shadow: 0 10px 6px -6px #d3d3d3;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  padding-top: 5vh;
+}
+
+.topnav a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+	line-height: 30px;
+  background: #00cc00;
+}
+
+.topnav #options {
+  float: right;
+}
+
+.topnav i {
+  margin-right: 50px;
+  font-size: 200%;
+}

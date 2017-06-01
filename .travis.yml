@@ -1,0 +1,18 @@
+
+language: node_js
+node_js:
+  - "stable"
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g @angular/cli
+  - npm install
+
+script:
+  - ng build
+  - ng test
+
+
