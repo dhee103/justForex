@@ -1,5 +1,5 @@
 import { Component, ChangeDetectorRef } from '@angular/core'
-import { trigger, state, style, transition, animate, keyframes } from '@angular/animations'
+import { trigger, state, style, animate, transition } from '@angular/animations'
 
 @Component({
   selector: 'side-bar',

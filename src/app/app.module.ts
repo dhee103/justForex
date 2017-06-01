@@ -84,7 +84,10 @@ const appRoutes: Routes = [
     AceEditorModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [EditorService, ProjectsService],
+  providers: [
+    EditorService,
+    ProjectsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

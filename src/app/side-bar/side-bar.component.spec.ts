@@ -1,7 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { SideBarComponent } from '../side-bar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { SideBarComponent } from './side-bar.component';
 
 describe('SideBarComponent', () => {
   beforeEach(async(() => {
@@ -22,6 +21,6 @@ describe('SideBarComponent', () => {
     const fixture = TestBed.createComponent(SideBarComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('li:nth-child(5)').textContent).toContain('Dashboard');
+    expect(compiled.querySelector('li:nth-(5)').textContent).toContain('Dashboard');
   }));
 });
