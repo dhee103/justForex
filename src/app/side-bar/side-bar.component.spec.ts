@@ -27,12 +27,12 @@ describe('SideBarComponent', () => {
   //   expect(compiled.querySelector('li:nth-child(2)').textContent).toContain('Dashboard');
   // }));
 
-  it('dashboard button should redirect to /dashboard', async(() => {
-    const fixture = TestBed.createComponent(SideBarComponent);
-    fixture.detectChanges();
-    let href = fixture.debugElement.query(By.css('li:nth-child(2)')).nativeElement
-        .getAttribute('routerLink');
-    expect(href).toEqual('/dashboard');
-  }));
+  // it('dashboard button should redirect to /dashboard', async(() => {
+  //   const fixture = TestBed.createComponent(SideBarComponent);
+  //   fixture.detectChanges();
+  //   let href = fixture.debugElement.query(By.css('li:nth-child(2)')).nativeElement
+  //       .getAttribute('routerLink');
+  //   expect(href).toEqual('/dashboard');
+  // }));
 
 });

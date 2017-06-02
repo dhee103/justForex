@@ -1,10 +1,10 @@
 .ace {
   width:50vw;
-  height: 40vh;
+  height: 80vh;
   margin-top: 5.4%;
+  margin-left: 5%;
   overflow: auto;
   position: fixed;
-  z-index: -2;
 }
 
 .code-editor {

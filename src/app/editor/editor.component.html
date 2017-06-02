@@ -21,24 +21,24 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <!-- The ace editor -->
-  <ace-editor class="ace"
-   [(text)]="text"
-   #editor></ace-editor>
+    <!-- The ace editor -->
+    <ace-editor class="ace"
+     [(text)]="text"
+     #editor></ace-editor>
 
-   <!-- Buttons that allow saving and running the tests -->
-   <nav class="navbar navbar-default navbar-fixed-bottom">
-     <div class="container-fluid">
-       <span class="navbar-center">
-         <button class="btn btn-default" (click)="addTask($event)">
-           Save
-         </button>
-         <button class="btn btn-default">
-           <a routerLink="/graphs">Run Backtest</a>
-         </button>
-       </span>
-     </div><!-- /.container-fluid -->
-   </nav>
-   <!-- Buttons that allow saving and running the tests -->
 
+  <!-- Buttons that allow saving and running the tests -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+     <span class="navbar-center">
+       <button class="btn btn-default" (click)="addTask($event)">
+         Save
+       </button>
+       <button class="btn btn-default">
+         <a routerLink="/graphs">Run Backtest</a>
+       </button>
+     </span>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Buttons that allow saving and running the tests -->
 </div>
