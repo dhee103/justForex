@@ -186,21 +186,21 @@ $(document).ready(function () {
       series: [{
           name: 'Brands',
           colorByPoint: true,
-            data: [{
-              name: 'USD',
-              y: 56.33
-          }, {
-              name: 'GBP',
-              y: 24.03,
-              sliced: true,
-              selected: true
-          }, {
-              name: 'JPY',
-              y: 10.38
-          }, {
-              name: 'EUR',
-              y: 0.2
-          }]
+          data: [{
+                  name: 'USD',
+                  y: 56.33
+              }, {
+                  name: 'GBP',
+                  y: 24.03,
+                  sliced: true,
+                  selected: true
+              }, {
+                  name: 'JPY',
+                  y: 10.38
+              }, {
+                  name: 'EUR',
+                  y: 37.5
+              }]
       }]
   });
 });
@@ -235,20 +235,20 @@ $(document).ready(function () {
           name: 'Brands',
           colorByPoint: true,
           data: [{
-              name: 'USD',
-              y: 56.33
-          }, {
-              name: 'GBP',
-              y: 24.03,
-              sliced: true,
-              selected: true
-          }, {
-              name: 'JPY',
-              y: 10.38
-          }, {
-              name: 'EUR',
-              y: 0.2
-          }]
+                  name: 'USD',
+                  y: 32.33
+              }, {
+                  name: 'GBP',
+                  y: 14,
+                  sliced: true,
+                  selected: true
+              }, {
+                  name: 'JPY',
+                  y: 6.38
+              }, {
+                  name: 'EUR',
+                  y: 12
+              }]
       }]
   });
 });
@@ -283,21 +283,21 @@ $(document).ready(function () {
       series: [{
           name: 'Brands',
           colorByPoint: true,
-           data: [{
-              name: 'USD',
-              y: 56.33
-          }, {
-              name: 'GBP',
-              y: 24.03,
-              sliced: true,
-              selected: true
-          }, {
-              name: 'JPY',
-              y: 10.38
-          }, {
-              name: 'EUR',
-              y: 0.2
-          }]
+          data: [{
+                  name: 'USD',
+                  y: 24
+              }, {
+                  name: 'GBP',
+                  y: 10.03,
+                  sliced: true,
+                  selected: true
+              }, {
+                  name: 'JPY',
+                  y: 4
+              }, {
+                  name: 'EUR',
+                  y: 21.5
+              }]
       }]
   });
 });
