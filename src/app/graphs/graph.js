@@ -186,25 +186,19 @@ $(document).ready(function () {
       series: [{
           name: 'Brands',
           colorByPoint: true,
-          data: [{
-              name: 'Microsoft Internet Explorer',
+            data: [{
+              name: 'USD',
               y: 56.33
           }, {
-              name: 'Chrome',
+              name: 'GBP',
               y: 24.03,
               sliced: true,
               selected: true
           }, {
-              name: 'Firefox',
+              name: 'JPY',
               y: 10.38
           }, {
-              name: 'Safari',
-              y: 4.77
-          }, {
-              name: 'Opera',
-              y: 0.91
-          }, {
-              name: 'Proprietary or Undetectable',
+              name: 'EUR',
               y: 0.2
           }]
       }]
@@ -241,24 +235,18 @@ $(document).ready(function () {
           name: 'Brands',
           colorByPoint: true,
           data: [{
-              name: 'Microsoft Internet Explorer',
+              name: 'USD',
               y: 56.33
           }, {
-              name: 'Chrome',
+              name: 'GBP',
               y: 24.03,
               sliced: true,
               selected: true
           }, {
-              name: 'Firefox',
+              name: 'JPY',
               y: 10.38
           }, {
-              name: 'Safari',
-              y: 4.77
-          }, {
-              name: 'Opera',
-              y: 0.91
-          }, {
-              name: 'Proprietary or Undetectable',
+              name: 'EUR',
               y: 0.2
           }]
       }]
@@ -295,25 +283,19 @@ $(document).ready(function () {
       series: [{
           name: 'Brands',
           colorByPoint: true,
-          data: [{
-              name: 'Microsoft Internet Explorer',
+           data: [{
+              name: 'USD',
               y: 56.33
           }, {
-              name: 'Chrome',
+              name: 'GBP',
               y: 24.03,
               sliced: true,
               selected: true
           }, {
-              name: 'Firefox',
+              name: 'JPY',
               y: 10.38
           }, {
-              name: 'Safari',
-              y: 4.77
-          }, {
-              name: 'Opera',
-              y: 0.91
-          }, {
-              name: 'Proprietary or Undetectable',
+              name: 'EUR',
               y: 0.2
           }]
       }]
