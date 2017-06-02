@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -22,7 +22,7 @@ import { GraphsComponent } from './graphs/graphs.component'
 import { EditorService } from './editor/editor.service';
 import { ProjectsService } from './projects/projects.service';
 
-const appRoutes: Routes = [
+export const appRoutes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
@@ -80,11 +80,14 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    BrowserAnimationsModule,
     AceEditorModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule
   ],
-  providers: [EditorService, ProjectsService],
+  providers: [
+    EditorService,
+    ProjectsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
