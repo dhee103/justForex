@@ -42,7 +42,7 @@ router.post('/task', function(req, res, next) {
             res.json(task);
         })
     }
-})
+});
 
 //Delete tasks
 router.delete('/tasks/:id', function(req, res, next){
