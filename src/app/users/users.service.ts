@@ -11,19 +11,19 @@ export class UsersService{
     }
 
     getUser(){
-        return this.http.get('/api/users')
+        return this.http.get('/api/users/getall')
             .map(res => res.json());
     }
 
     addUser(newUser){
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/api/user', JSON.stringify(newUser), {headers: headers})
+        return this.http.post('/api/users/save', JSON.stringify(newUser), {headers: headers})
             .map(res => res.json());
     }
 
     deleteUser(id){
-        return this.http.delete('/api/user/'+id)
+        return this.http.delete('/api/users/delete'+id)
             .map(res => res.json());
     }
 }

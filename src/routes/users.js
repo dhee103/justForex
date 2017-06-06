@@ -6,7 +6,7 @@ const mongojs = require('mongojs');
 var db = mongojs('mongodb://justforex:ahdgmypnd20@ds157631.mlab.com:57631/justforex', ['users'])
 
 // Get All Users
-router.get('/users', function(req, res, next){
+router.get('/getall', function(req, res, next){
     db.users.find(function(err, users){
         if(err){
             res.send(err);
@@ -16,7 +16,7 @@ router.get('/users', function(req, res, next){
 });
 
 // Get Single Users
-router.get('/users/:id', function(req, res, next){
+router.get('/get/:id', function(req, res, next){
     db.users.findOne({_id: mongojs.ObjectsId(req.params.id)}, function(err, users){
         if(err){
             res.send(err);
@@ -26,7 +26,7 @@ router.get('/users/:id', function(req, res, next){
 });
 
 //Save User
-router.post('/user', function(req, res, next) {
+router.post('/save', function(req, res, next) {
     var user = req.body;
 
     if(!user.text) {
@@ -45,7 +45,7 @@ router.post('/user', function(req, res, next) {
 });
 
 //Delete users
-router.delete('/users/:id', function(req, res, next){
+router.delete('/delete/:id', function(req, res, next){
     db.users.remove({_id: mongojs.ObjectsId(req.params.id)}, function(err, users){
         if(err){
             res.send(err);
