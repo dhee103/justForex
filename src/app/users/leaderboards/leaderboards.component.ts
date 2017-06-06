@@ -1,12 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+
+// import { Ng2SmartTableModule } from 'ng2-smart-table';
+//
+// import { LocalDataSource } from 'ng2-smart-table';
+
+import { ServerDataSource } from '../../../../node_modules/ng2-smart-table';
 
 @Component({
-  selector: 'app-leaderboards',
+  // selector: 'app-leaderboards',
+  selector: 'advanced-example-server',
   templateUrl: './leaderboards.component.html',
   styleUrls: ['./leaderboards.component.css']
 })
 
-export class LeaderboardsComponent implements OnInit {
+export class LeaderboardsComponent {
+// implements OnInit {
 
   settings = {
     columns: {
@@ -14,45 +23,49 @@ export class LeaderboardsComponent implements OnInit {
         title: 'ID'
       },
       name: {
-        title: 'Full Name'
+        title: 'Album'
       },
       username: {
-        title: 'User Name'
+        title: 'Title'
       },
       email: {
-        title: 'Email'
+        title: 'Url'
       }
     }
   };
 
-  data = [
-    {
-      id: 1,
-      name: "Leanne Graham",
-      username: "Bret",
-      email: "Sincere@april.biz"
-    },
-    {
-      id: 2,
-      name: "Ervin Howell",
-      username: "Antonette",
-      email: "Shanna@melissa.tv"
-    },
+  // data = [
+  //   {
+  //     id: 1,
+  //     name: "Leanne Graham",
+  //     username: "Bret",
+  //     email: "Sincere@april.biz"
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Ervin Howell",
+  //     username: "Antonette",
+  //     email: "Shanna@melissa.tv"
+  //   },
+  //
+  //   // ... list of items
+  //
+  //   {
+  //     id: 11,
+  //     name: "Nicholas DuBuque",
+  //     username: "Nicholas.Stanton",
+  //     email: "Rey.Padberg@rosamond.biz"
+  //   }
+  // ];
 
-    // ... list of items
+  source: ServerDataSource;
 
-    {
-      id: 11,
-      name: "Nicholas DuBuque",
-      username: "Nicholas.Stanton",
-      email: "Rey.Padberg@rosamond.biz"
-    }
-  ];
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor(http: Http) {
+    this.source = new ServerDataSource(http, { endPoint: 'https://jsonplaceholder.typicode.com/photos'});
   }
+
+  // ngOnInit() {
+  // }
 
   // @Input() user: User
 
